@@ -12,3 +12,13 @@ h1 {
 	-webkit-box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.3);;
 	box-shadow:         inset 0 0 30px rgba(0, 0, 255, 0.3);;
 }
+
+.square {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	background-color: #0000cc;
+	width: 100px;
+	height: 100px;
+	opacity: 0.5;
+}

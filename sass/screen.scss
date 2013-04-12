@@ -1,0 +1,45 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+
+$headlineWidth: 50%;
+$whiteColor: rgba(255, 255, 125, 0.5);
+$redColor: #ff0000;
+$baseFontSize: 800%;
+
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: $baseFontSize;
+}
+
+@mixin left($dist) {
+  float: left;
+  margin-left: $dist;
+}
+
+.test {
+	width: $headlineWidth;
+	color: $whiteColor;
+
+	@include left(200px);
+	@include transition-property(color);
+  	@include transition-duration(0.5s);
+
+	h1 {
+		color: $redColor;
+	}
+
+	&:hover {
+		color: #000000;
+		cursor: pointer;
+	}
+
+	display: block;
+	background-color: #0000ff;
+}
